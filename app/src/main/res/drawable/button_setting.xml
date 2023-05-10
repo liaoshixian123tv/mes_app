@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- pressed state -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/btn_1_press"/>
+
+    <!-- focused state -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/btn_rect_1"/>
+
+    <!-- default state -->
+    <item android:drawable="@drawable/btn_rect_1"/>
+</selector>

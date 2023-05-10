@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manufacture_order_card_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="18dp"
+    android:focusable="false"
+    android:clickable="false"
+    app:cardBackgroundColor="#42b3e3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/mo_number_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Number:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mo_number_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:text="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mo_amount_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Amount:"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mo_amount_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:text="bold">
+            
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_function"
+    app:startDestination="@id/function_main_page">
+
+    <fragment
+        android:id="@+id/function_main_page"
+        android:name="com.example.mes_app.ui.productflow.FunctionFragment"
+        tools:layout="@layout/fragment_function">
+        <action
+            android:id="@+id/action_function_main_page_to_proFlowFragment"
+            app:destination="@id/proFlowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/proFlowFragment"
+        android:name="com.example.mes_app.ui.productflow.ProFlowFragment"
+        android:label="ProFlowFragment"
+        tools:layout="@layout/fragment_pro_flow">
+        <action
+            android:id="@+id/action_proFlowFragment_to_manufactureOrderListFragment"
+            app:destination="@id/manufactureOrderListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manufactureOrderListFragment"
+        android:name="com.example.mes_app.ui.productflow.ManufactureOrderListFragment"
+        android:label="ManufactureOrderListFragment"
+        tools:layout="@layout/fragment_manufacture_order_list" />
+
+
+</navigation>

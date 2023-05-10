@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manufacture_order_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/trans_item_prompt_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Manufacture Order"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="12"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number"
+                            android:hint="number"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="5"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_amount"
+                            android:hint="Amount"
+                            android:background="@color/white"
+                            android:singleLine="true"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number1"
+                            android:hint="Start Time"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="12"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number2"
+                            android:hint="number"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="12"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number3"
+                            android:hint="number"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="12"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number4"
+                            android:hint="number"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginHorizontal="30dp"
+                        app:counterMaxLength="12"
+                        app:counterEnabled="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/add_mo_number5"
+                            android:hint="number"
+                            android:singleLine="true"
+                            android:background="@color/white"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_mo_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_confirm"
+            android:textColor="@color/white"
+            android:text="done"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_mo_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_confirm"
+            android:textColor="@color/white"
+            android:text="cancel"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

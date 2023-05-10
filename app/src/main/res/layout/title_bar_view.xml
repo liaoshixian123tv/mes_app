@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center|left"
+        android:background="@drawable/button_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"></ImageButton>
+
+    <TextView
+        android:id="@+id/header_title_text"
+        android:textSize="21sp"
+        android:text="IoM-MES"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </TextView>
+
+</FrameLayout>

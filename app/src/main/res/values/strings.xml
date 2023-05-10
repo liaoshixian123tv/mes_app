@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mes</string>
+
+    <string name="err_user_cancel">User Cancel</string>
+    <string name="err_timeout">User Operate Timeout</string>
+    err_timeout
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/drawable-v24/button_confirm.xml" value="0.1465" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/drawable/button_cancel.xml" value="0.312" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/drawable/product_flow_icon.xml" value="0.147" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/add_inspector_record_view.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/add_manufacture_order_view.xml" value="0.25" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/add_product_record_view.xml" value="0.3328125" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/add_schedule_view.xml" value="0.2" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/add_task_view.xml" value="0.3328125" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/fragment_function.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/fragment_functions.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/fragment_manufacture_order_list.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/fragment_pro_flow.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/fragment_setting.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/function_item_view.xml" value="0.5" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/main_screen_view.xml" value="0.2" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/manufacture_order_detail.xml" value="0.25" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/manufacture_order_list_view.xml" value="0.1953125" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/title_bar_view.xml" value="0.33" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/layout/view_one.xml" value="0.25" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/FragmentHideAndShow/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/LeoFragmentHideAndShow/app/src/main/res/layout/add_inspector_record_view.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/LeoFragmentHideAndShow/app/src/main/res/layout/fragment_function.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/LeoFragmentHideAndShow/app/src/main/res/layout/fragment_manufacture_order_list.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/9779/Desktop/android_workspace/LeoFragmentHideAndShow/app/src/main/res/layout/function_item_view.xml" value="0.13854166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_shceudle_view_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:showDividers="middle">
+
+    <TextView
+        android:text="Schedule View"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/schedule_radio_group_view"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:checkedButton="@id/selection_a_radio">
+
+        <RadioButton
+            android:id="@+id/selection_a_radio"
+            android:layout_weight="1"
+            android:text="A"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/selection_b_radio"
+            android:layout_weight="1"
+            android:text="B"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/schedule_cancel_image_btn"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/img_trans_error"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/schedule_ok_image_btn"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/img_trans_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true">
+
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>
