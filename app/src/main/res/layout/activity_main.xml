@@ -36,6 +36,8 @@
 
             <include layout="@layout/add_schedule_view"></include>
 
+            <include layout="@layout/scan_qr_view"></include>
+
         </FrameLayout>
 
     </LinearLayout>

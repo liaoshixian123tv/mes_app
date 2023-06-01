@@ -3,6 +3,12 @@
 
     <string name="err_user_cancel">User Cancel</string>
     <string name="err_timeout">User Operate Timeout</string>
-    err_timeout
+    <string name="err_comm_receive_failed">Communication\nReceive Failed</string>
+    <string name="err_comm_open_failed">Communication\nOpen Failed</string>
+    <string name="err_comm_connect_failed">Communication\nConnect Failed</string>
+    <string name="err_comm_disconnect_failed">Communication\nDisconnect Failed</string>
+    <string name="err_comm_send_failed">Communication\nSend Failed</string>
+    <string name="err_comm_receive_timeout">Communication\nReceive Timeout</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

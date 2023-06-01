@@ -207,6 +207,14 @@ class ProFlowFragment : Fragment() {
                     resources,
                     R.drawable.ico_general
                 )
+            ),
+            FunctionItem(
+                id = Constant.PRODUCT_SCAN,
+                mainDispText = "QR SCAN",
+                mainDispIconBmp = BitmapFactory.decodeResource(
+                    resources,
+                    R.drawable.ico_general
+                )
             )
         )
     }

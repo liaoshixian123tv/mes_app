@@ -29,6 +29,7 @@ object Constant {
     const val PRODUCT_FLOW_ADD = "PRODUCT_FLOW_ADD"
     const val PRODUCT_FLOW_SHOW = "PRODUCT_FLOW_SHOW"
     const val PRODUCT_BLA_BLA = "PRODUCT_BLA_BLA"
+    const val PRODUCT_SCAN = "PRODUCT_SCAN"
 // -------------------------------------------------------------------
 
     // Action Type
@@ -36,9 +37,11 @@ object Constant {
     const val ACTION_FINISH = 2
     const val ACTION_BACK = 3
     const val ACTION_DISPLAY_SCHEDULE = 4
+    const val ACTION_DISPLAY_QR_SCAN = 5
 
     // view action
     const val USER_PRESS_OK_BUTTON = 1001
     const val USER_PRESS_CANCEL_BUTTON = 1002
     const val USER_PRESS_TIMEOUT = 1004
+    const val USER_QR_SCAN_COMPLETE = 1005
 }

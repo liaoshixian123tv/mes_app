@@ -9,5 +9,6 @@ data class ManufactureOrder(
 data class WALAWALA(
     var scheduleType: String = "",
     var TaskType: String = "",
-    var InspectorNumber: Int = 0
+    var InspectorNumber: Int = 0,
+    var qrResult: String = ""
 )

@@ -12,10 +12,12 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.mes_app.R
 import com.example.mes_app.databinding.ActivityMainBinding
 import com.example.mes_app.controller.ProFlowCtrl
+import com.example.mes_app.controller.ScanQRCtrl
 import com.example.mes_app.event.ActionEvent
 import com.example.mes_app.event.StartBusinessEvent
 import com.example.mes_app.model.ManufactureOrder
 import com.example.mes_app.ui.BaseView
+import com.example.mes_app.ui.ScanQRView
 import com.example.mes_app.ui.ScheduleView
 import com.example.mes_app.ui.TitleBarView
 import com.example.mes_app.ui.TitleBarView.saveMainPageTitleBar
@@ -42,7 +44,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainScreenView: LinearLayout
 
     var scheduleView = ScheduleView()
+    var qrScanView = ScanQRView()
     var currentView: BaseView = scheduleView
+    private var backButtonEnabled = true
 
 
     var moArray: MutableList<ManufactureOrder> = mutableListOf()
@@ -61,6 +65,11 @@ class MainActivity : AppCompatActivity() {
                 Constant.ACTION_DISPLAY_SCHEDULE -> {
                     dispScheduleView()
                 }
+
+                Constant.ACTION_DISPLAY_QR_SCAN -> {
+                    dispQRScanView()
+                }
+
                 Constant.ACTION_FINISH -> {
                     backToMainScreen()
                 }
@@ -77,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         when (businessType) {
             Constant.PRODUCT_FLOW -> requestFunctionHandler.post(ProFlowCtrl(context, uiHandler))
             Constant.PRODUCT_BLA_BLA -> requestFunctionHandler.post(ProFlowCtrl(context, uiHandler))
+            Constant.PRODUCT_SCAN -> requestFunctionHandler.post(ScanQRCtrl(context, uiHandler))
         }
     }
 
@@ -91,6 +101,7 @@ class MainActivity : AppCompatActivity() {
         mainScreenView = rootBody.findViewById(R.id.main_screen_view_layout)
 
         scheduleView.initView(this, rootBody.findViewById(R.id.add_shceudle_view_main_layout))
+        qrScanView.initView(this, rootBody.findViewById(R.id.qr_scanner_layout))
 
         val navView: BottomNavigationView = mainScreenView.findViewById(R.id.nav_view)
 
@@ -120,8 +131,6 @@ class MainActivity : AppCompatActivity() {
             0
         )
 
-        Log.d(TAG, "lalalalaalalalalalala " + tmp.toString())
-
     }
 
 
@@ -137,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this)
         }
-
+        currentView.resumeView()
         super.onResume()
     }
 
@@ -201,7 +210,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         Log.d(TAG, "onBackPressed")
-        super.onBackPressed()
+        if (backButtonEnabled) {
+            super.onBackPressed() // 執行默認的返回操作
+        }
     }
 
 
@@ -224,6 +235,7 @@ class MainActivity : AppCompatActivity() {
     // hideAllView 隱藏所有的view
     private fun hideAllView() {
         scheduleView.hideView()
+        qrScanView.hideView()
         mainScreenView.visibility = View.INVISIBLE
 
     }
@@ -234,13 +246,22 @@ class MainActivity : AppCompatActivity() {
         currentView.stopView()
         hideAllView()
         mainScreenView.visibility = View.VISIBLE
+        backButtonEnabled = true
     }
 
     fun dispScheduleView() {
         hideAllView()
         scheduleView.dispView("")
         currentView = scheduleView
+        backButtonEnabled = false
 
+    }
+
+    fun dispQRScanView() {
+        hideAllView()
+        qrScanView.dispView("")
+        currentView = qrScanView
+        backButtonEnabled = false
     }
 
     fun backToMainScreen() {
@@ -249,6 +270,7 @@ class MainActivity : AppCompatActivity() {
         }
         displayMainScreen()
         TitleBarView.rollbackMainPageTitleBar()
+        backButtonEnabled = true
     }
 
 }

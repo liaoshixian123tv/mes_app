@@ -10,7 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
 }
-rootProject.name = "FragmentHideAndShow"
+rootProject.name = "mes_app"
 include ':app'

@@ -68,6 +68,10 @@ class ScheduleView : BaseView {
         scheudleViewLayout.visibility = View.INVISIBLE
     }
 
+    override fun resumeView() {
+        Log.d(TAG, "resumeView")
+    }
+
 
 }
 
@@ -97,7 +101,7 @@ object SelectScheduleTypeController {
                 }
                 Constant.USER_PRESS_CANCEL_BUTTON -> {
                     Log.d(TAG, "USER_PRESS_CANCEL_BUTTON")
-                    ret = ErrCode.ERR_USERCANCEL
+                    ret = ErrCode.ERR_USER_CANCEL
                     break
                 }
                 Constant.USER_PRESS_TIMEOUT -> {

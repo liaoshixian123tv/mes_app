@@ -45,4 +45,18 @@ class AppUtility {
     }
 
 
+    fun getQRScanResult(info: WALAWALA): ErrCode {
+        var ret: ErrCode = ErrCode.NO_ERR
+        dispUtil.dispQRResult(object :
+            DispUtility.selectScanQRListener<ErrCode, String> {
+            override fun onSelectScanQRListenerResult(status: ErrCode, stringText: String) {
+                ret = status
+                info.qrResult = stringText
+            }
+        })
+        println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        return ret
+    }
+
+
 }

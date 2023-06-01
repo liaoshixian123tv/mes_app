@@ -9,4 +9,5 @@ interface BaseView {
     fun dispView(dispDataObject: Any)
     fun stopView()
     fun hideView()
+    fun resumeView()
 }
